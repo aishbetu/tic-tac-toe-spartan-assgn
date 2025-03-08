@@ -93,7 +93,7 @@ const useGameStore = create<GameState>((set, get) => ({
             setTimeout(() => {
                 get().computerMove();
                 get().setIsComputerThinking(false);
-            }, 2000);
+            }, 500);
         }
     },
     makeComputerMove: (index: number) => {
